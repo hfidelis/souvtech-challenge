@@ -36,6 +36,7 @@ export class ItemsRepository {
       orderBy: { createdAt: 'desc' },
       page,
       page_size,
+      include: { category: true },
     });
   }
 
